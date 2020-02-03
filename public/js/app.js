@@ -14,7 +14,7 @@ const weatherData = (location) => {
     messageOne.textContent = "loading...";
     messageTwo.textContent = "";
 
-  fetch(`http://www.localhost:3000/weather?address=${location}`).then(res => {
+  fetch(`/weather?address=${location}`).then(res => {
     res.json().then(res => {
       if (!!res.err) {
         return messageOne.textContent = res.err;
