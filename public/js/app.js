@@ -19,8 +19,8 @@ const weatherData = (location) => {
       if (!!res.err) {
         return messageOne.textContent = res.err;
       }
-      messageOne.textContent = res.forecastData;
-      messageTwo.textContent = res.location;
+      messageTwo.textContent = res.forecastData;
+      messageOne.textContent = res.location;
     });
   });
 }
